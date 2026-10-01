@@ -1,1 +1,301 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gift Kampamba | Portfolio</title>
+
+    <style>
+        /* General page styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background-color: #111c32;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero section */
+        .hero {
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #0284c7;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        /* General sections */
+        section {
+            padding: 55px 8%;
+        }
+
+        section h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: #cbd5e1;
+        }
+
+        /* Skills */
+        .skills-container,
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111c32;
+            text-align: center;
+            padding: 20px;
+            color: #94a3b8;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Gift Kampamba</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage introduction -->
+    <div class="hero" id="home">
+
+        <h1>Hello, I'm <span>Gift Kampamba</span></h1>
+
+        <p>
+            Information Systems Graduate | Data Analytics |
+            Artificial Intelligence | Software Development
+        </p>
+
+        <a href="#projects" class="btn">Explore My Projects</a>
+
+    </div>
+
+    <!-- About section -->
+    <section class="about" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am an Information Systems graduate from Copperbelt
+            University with an interest in Data Analytics,
+            Artificial Intelligence and Software Development.
+
+            I enjoy using technology and data to solve real-world
+            problems and develop practical solutions.
+        </p>
+
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="card">
+                <h3>Programming</h3>
+                <p>Python, Java, JavaScript</p>
+            </div>
+
+            <div class="card">
+                <h3>Data Analytics</h3>
+                <p>Python, Pandas, Data Mining, Excel</p>
+            </div>
+
+            <div class="card">
+                <h3>Databases</h3>
+                <p>MySQL, SQL Server</p>
+            </div>
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, Java, Spring Boot</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+
+        <h2>Featured Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="card">
+                <h3>Building Age Classification</h3>
+                <p>
+                    A machine learning project using satellite
+                    imagery and historical data to classify
+                    building construction ages.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>LandVerify ZM</h3>
+                <p>
+                    An AI-enabled blockchain-based digital land
+                    and house verification system designed
+                    to help prevent property fraud in Zambia.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Data Analytics</h3>
+                <p>
+                    Practical data analysis projects involving
+                    data cleaning, exploration, visualization
+                    and insights.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>Email: your-email@example.com</p>
+
+        <p>GitHub: github.com/YOUR-USERNAME</p>
+
+        <p>LinkedIn: Add your LinkedIn profile</p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Gift Kampamba. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
