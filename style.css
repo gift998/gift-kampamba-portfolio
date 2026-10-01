@@ -1,1 +1,281 @@
 
+/* =========================================
+   GENERAL SETTINGS
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background-color: #111c32;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero span {
+    color: #38bdf8;
+}
+
+.hero p {
+    max-width: 700px;
+
+    color: #cbd5e1;
+
+    margin-bottom: 30px;
+
+    font-size: 18px;
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.btn {
+    display: inline-block;
+
+    background-color: #0284c7;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0369a1;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   GENERAL SECTIONS
+   ========================================= */
+
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    color: #38bdf8;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    font-size: 32px;
+}
+
+
+/* =========================================
+   ABOUT
+   ========================================= */
+
+.about p {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+
+    color: #cbd5e1;
+
+    font-size: 17px;
+}
+
+
+/* =========================================
+   SKILLS
+   ========================================= */
+
+.skills-container,
+.projects-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+}
+
+.card {
+
+    background-color: #1e293b;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+    background-color: #263449;
+}
+
+.card h3 {
+
+    color: #38bdf8;
+
+    margin-bottom: 12px;
+}
+
+.card p {
+
+    color: #cbd5e1;
+}
+
+
+/* =========================================
+   CONTACT
+   ========================================= */
+
+.contact {
+
+    text-align: center;
+}
+
+.contact p {
+
+    margin-bottom: 10px;
+
+    color: #cbd5e1;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+
+    background-color: #111c32;
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #94a3b8;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav ul {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .hero h1 {
+
+        font-size: 34px;
+    }
+
+    .hero p {
+
+        font-size: 16px;
+    }
+
+    section {
+
+        padding: 60px 5%;
+    }
+}
